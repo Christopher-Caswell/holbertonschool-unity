@@ -470,7 +470,7 @@
 		</data>
 		<key>Resources/Data/globalgamemanagers</key>
 		<data>
-		YWeH+Fb0koSBqV9QUftks7wnstA=
+		zqj6aST56b2btAYAFuyABtpyjGI=
 		</data>
 		<key>Resources/Data/globalgamemanagers.assets</key>
 		<data>
@@ -539,10 +539,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			jIHk0st+o0sOEFm17OfhPzplvms=
+			xGyn4tXHKdTk4UHxxXWrxgmbyKw=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"8c81e4d2cb7ea34b0e1059b5ece7e13f3a65be6b" or cdhash H"2d15259b8d9b391025e40b83f28758926d5e4974"</string>
+			<string>cdhash H"c46ca7e2d5c729d4e4e141f1c575abc6099bc8ac"</string>
 		</dict>
 		<key>Frameworks/libMonoPosixHelper.dylib</key>
 		<dict>
@@ -551,7 +551,7 @@
 			kG4mLGReL3KEDBq/N8ZwxnyKYJw=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"906e262c645e2f72840c1abf37c670c67c8a609c" or cdhash H"8003bef71c9e0caaa036280de9d0b0366b9a4f5c"</string>
+			<string>cdhash H"906e262c645e2f72840c1abf37c670c67c8a609c"</string>
 		</dict>
 		<key>Frameworks/libmonobdwgc-2.0.dylib</key>
 		<dict>
@@ -560,7 +560,7 @@
 			zP4xIWum3+RKjM1z7MDzqgi/ico=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"ccfe31216ba6dfe44a8ccd73ecc0f3aa08bf89ca" or cdhash H"e33bcff372164404168ebadcba869faac0b23dbc"</string>
+			<string>cdhash H"ccfe31216ba6dfe44a8ccd73ecc0f3aa08bf89ca"</string>
 		</dict>
 		<key>MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser</key>
 		<dict>
@@ -1513,7 +1513,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ibIq4IlUefKYLHp0G861j7U49GM1BDdzCeRIlfNqk70=
+			V0ah2kLhJ690wrGiPSqK0wK1xZUhdUA3+Ljeg8YWW3E=
 			</data>
 		</dict>
 		<key>Resources/Data/globalgamemanagers.assets</key>
