@@ -831,14 +831,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234863961}
-  m_LocalRotation: {x: -0, y: -0.0022640803, z: 0, w: 0.99999744}
+  m_LocalRotation: {x: -0.037409265, y: 0.018136697, z: 0.14118469, w: 0.98910993}
   m_LocalPosition: {x: 19.66, y: -0.5, z: -71.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1418309902}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: -0.259, z: 0}
+  m_LocalEulerAnglesHint: {x: -4.538, y: 1.455, z: 16.189}
 --- !u!114 &1234863966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,32 +879,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99999744
+      value: 0.039545193
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.04309798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0022640803
+      value: 0.9982792
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.004170861
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 0.672
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 175.492
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 4.918
       objectReference: {fileID: 0}
+    - target: {fileID: -8435149241731497473, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c047be175119094a964f23df68bda2a, type: 2}
     - target: {fileID: -4002239815115787907, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_DynamicOccludee
       value: 1
@@ -916,7 +920,7 @@ PrefabInstance:
     - target: {fileID: -4002239815115787907, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3ef2646154088e74aa69c1e10eb68733, type: 2}
+      objectReference: {fileID: 2100000, guid: 3c2707cae1ca14b418268bb4e39d5fdc, type: 2}
     - target: {fileID: -4002239815115787907, guid: 4e96f587ddd0c7b40b94e55a0dd4a128, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -3269,6 +3273,10 @@ PrefabInstance:
       value: "0:00.00\t"
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -3279,6 +3287,10 @@ PrefabInstance:
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -3295,6 +3307,10 @@ PrefabInstance:
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_FontData.m_VerticalOverflow

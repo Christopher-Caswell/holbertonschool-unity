@@ -78,3 +78,97 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 Registered in 0.005421 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Christopher Caswell\Documents\GitHub\holbertonschool-unity\0x00-unity-assets_models_textures\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Christopher Caswell\Documents\GitHub\holbertonschool-unity\0x00-unity-assets_models_textures\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (871ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (284ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2958 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.0 MB.
+System memory in use after: 110.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3405.
+Total: 3.248200 ms (FindLiveObjects: 0.339300 ms CreateObjectMapping: 0.082400 ms MarkObjects: 2.751100 ms  DeleteObjects: 0.074400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Materials/Flag.mat
+  artifactKey: Guid(3c2707cae1ca14b418268bb4e39d5fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flag.mat using Guid(3c2707cae1ca14b418268bb4e39d5fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdab3c7aa776f10caa0f19e28c3520c') in 0.126811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.813350 seconds.
+  path: Assets/GG-Textures/Textures
+  artifactKey: Guid(cced61135a91c2c49853873d1d408d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GG-Textures/Textures using Guid(cced61135a91c2c49853873d1d408d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba7a2cb8ef6235cb2f310b1f6973463') in 0.007723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.142310 seconds.
+  path: Assets/GG-Textures/Textures/sand1
+  artifactKey: Guid(31d5f44aae790bb4993bc51d33de28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GG-Textures/Textures/sand1 using Guid(31d5f44aae790bb4993bc51d33de28c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c4ba4150944ab822c5026e763bc23f') in 0.007526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.096387 seconds.
+  path: Assets/GG-Textures/Textures/sand1/sand1_ao.bmp
+  artifactKey: Guid(56568626b46b64a4994154df67a997a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GG-Textures/Textures/sand1/sand1_ao.bmp using Guid(56568626b46b64a4994154df67a997a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d86a25008c49837630b63dafad5c9c5') in 0.071516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.048106 seconds.
+  path: Assets/Materials/Wood.bmp
+  artifactKey: Guid(56568626b46b64a4994154df67a997a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Wood.bmp using Guid(56568626b46b64a4994154df67a997a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d3b52900351d4b9970c49dff425338') in 0.016330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.397318 seconds.
+  path: Assets/Materials/Wood.mat
+  artifactKey: Guid(07951739b63b6eb478ed9cfaddff522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Wood.mat using Guid(07951739b63b6eb478ed9cfaddff522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e57be322214637e514403850dba22f') in 0.016067 seconds 
