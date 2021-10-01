@@ -8,9 +8,15 @@ public class OptionsMenu : MonoBehaviour
 {
     public Toggle invertY;
 
+    public Button applyButton;
+    public Button backButton;
+    // public Button 
+
     void Start()
     {
         invertY.isOn = PlayerPrefs.GetInt("invertY", 0) == 1;
+        applyButton.onClick.AddListener(Apply);
+        backButton.onClick.AddListener(Back);
     }
 
     public void ToggleInvertY()
@@ -26,6 +32,6 @@ public class OptionsMenu : MonoBehaviour
     public void Apply()
     {
         PlayerPrefs.Save();
-        SceneManager.LoadScene(PlayerPrefs.GetInt("lastScene"));
+        SceneManager.LoadScene("MainMenu");
     }
 }
