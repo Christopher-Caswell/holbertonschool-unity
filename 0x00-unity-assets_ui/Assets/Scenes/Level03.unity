@@ -3992,6 +3992,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+--- !u!1 &1400622071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8376162706609556496, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1400622072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8376162705619196773, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1400622073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5987672458893984881, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1400622074 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8376162705696701778, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1400622075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8376162707075887220, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1400622076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8376162705233611117, guid: 4b09ff4d1ea7c064bbd2ff19590dd4de, type: 3}
+  m_PrefabInstance: {fileID: 1400622070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1423321360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,6 +4315,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1445297569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445297564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5deffbe49b236bd4ba016c8aebef2b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 1400622071}
+  resumeButton: {fileID: 1400622074}
+  restartButton: {fileID: 1400622076}
+  quitButton: {fileID: 1400622072}
+  menuButton: {fileID: 1400622075}
+  optionsButton: {fileID: 1400622073}
 --- !u!1 &1463224489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,15 +6013,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Color.b
-      value: 0.003921569
+      value: 0.46666667
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Color.g
-      value: 0.003921569
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Color.r
-      value: 0.003921569
+      value: 0.46666667
       objectReference: {fileID: 0}
     - target: {fileID: 3632982150111565325, guid: fa6b41b2b56e82d419b181073840882e, type: 3}
       propertyPath: m_Material
