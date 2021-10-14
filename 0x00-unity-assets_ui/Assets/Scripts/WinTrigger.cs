@@ -8,6 +8,7 @@ public class WinTrigger : MonoBehaviour
     public Collider player;
     public Timer timer;
     public Text timerText;
+    public static bool GameIsPaused;
 
     public GameObject winCanvas;
 
@@ -15,6 +16,9 @@ public class WinTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            GameIsPaused = true;
             timer.Stop();
             timer.Win();
             timerText.fontSize = 95;
