@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public Animator animator;
+    public float falling;
+    public bool isWalking;
+    public bool mobile = true;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -35,12 +40,19 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask, QueryTriggerInteraction.Ignore);
+        animator.SetBool("isGrounded", isGrounded);
 
         if (isGrounded && playerVelocity.y < -1.5f)
         {
             playerVelocity.y = -1f;
         }
+        else if (!isGrounded)
+        {
+            falling += gravity * Time.deltaTime;
+        }
 
+        if (mobile)
+        {
         float Horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(Horizontal, 0f, Vertical).normalized;
@@ -53,13 +65,23 @@ public class PlayerController : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            isWalking = true;
         }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+        // animator.SetBool("isWalking", true);
+
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -2f * gravity);
+            // animator.SetTrigger("jump");
+            animator.SetBool("isJumping", true);
         }
         playerVelocity.y += gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+        }
     }
 
     void FixedUpdate()

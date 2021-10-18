@@ -1,47 +1,12 @@
 fileFormatVersion: 2
-guid: 7874098e99f134341866d67285a32b55
+guid: ca9a59543c82256449ed386efe59e7a3
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_Hair_diffuse
-    second: {fileID: 2800000, guid: b3521d4d431aed54dbea0d50d0784fcf, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_Hands_diffuse
-    second: {fileID: 2800000, guid: 67d6d41719691e14fb429f3c594fb1b6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_Head_diffuse
-    second: {fileID: 2800000, guid: 363ec87275a9da44f9ed7fbd3df0c373, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_LowerBody_diffuse
-    second: {fileID: 2800000, guid: fd5ba2aaf3cf7c145b118d06c573a2a3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_Scarf_diffuse
-    second: {fileID: 2800000, guid: 1f30c9bf690cbb4488d1e3b471fbff3a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_Shoes_diffuse
-    second: {fileID: 2800000, guid: f34ef851415bc1f42a7443762135ff48, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Boy_UpperBody_diffuse
-    second: {fileID: 2800000, guid: ad018c04fae259f479428d96f05cdc95, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

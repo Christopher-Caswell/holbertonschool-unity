@@ -899,7 +899,13 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Boy:Hips'\n\tTransform 'Boy:LeftArm'\n\tTransform
+    'Boy:RightHandRing1'\n\tTransform 'Boy:RightHandThumb1'\n\tTransform 'Boy:LeftHandRing2'\n\tTransform
+    'Boy:Head'\n\tTransform 'Boy:LeftHandPinky2'\n\tTransform 'Boy:RightHandIndex2'\n\tTransform
+    'Boy:RightArm'\n\tTransform 'Boy:LeftHandIndex3'\n\tand more ...\n\tFrom animation
+    clip 'Jump'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -5026,7 +5032,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1814490412085628097
 MonoBehaviour:
@@ -5056,6 +5062,10 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 649901590}
+  falling: 0
+  isWalking: 0
+  mobile: 1
 --- !u!143 &1814490412085628098
 CharacterController:
   m_ObjectHideFlags: 0
