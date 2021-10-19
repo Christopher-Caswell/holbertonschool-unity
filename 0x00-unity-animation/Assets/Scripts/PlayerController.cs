@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundMask;
 
     public Animator animator;
-    public float falling;
+    public bool falling = false;
     public bool isWalking;
     public bool mobile = true;
 
@@ -39,16 +39,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        animator.SetBool("isJumping", !isGrounded);
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask, QueryTriggerInteraction.Ignore);
         animator.SetBool("isGrounded", isGrounded);
 
         if (isGrounded && playerVelocity.y < -1.5f)
         {
             playerVelocity.y = -1f;
-        }
-        else if (!isGrounded)
-        {
-            falling += gravity * Time.deltaTime;
+            animator.SetBool("falling", true);
         }
 
         if (mobile)
@@ -71,7 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isWalking", false);
         }
-        // animator.SetBool("isWalking", true);
+        animator.SetBool("isWalking", true);
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
