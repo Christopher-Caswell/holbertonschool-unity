@@ -9,6 +9,8 @@ public class WinTrigger : MonoBehaviour
     public Timer timer;
     public Text timerText;
     public static bool GameIsPaused;
+    public AudioSource bgm;
+    public AudioSource stinger;
 
     public GameObject winCanvas;
 
@@ -25,6 +27,8 @@ public class WinTrigger : MonoBehaviour
             timerText.color = Color.green;
             Time.timeScale = 0;
             winCanvas.SetActive(true);
+            bgm.Stop();
+            stinger.Play();
         }
     }
 }
