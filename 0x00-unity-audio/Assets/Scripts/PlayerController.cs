@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using UnityEngine.Audio;
 
 
 /// <summary>
@@ -11,6 +11,8 @@ using UnityEngine.UI;
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
+    // public AudioMixer audioMixer;
+
     public GameObject player;
     public CharacterController controller;
     public Rigidbody x;
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        // audioMixer.SetFloat("bgmVol", PlayerPrefs.GetFloat("bgmVol", Mathf.Log10(1f) * 20f));
+        // audioMixer.SetFloat("sfxVol", PlayerPrefs.GetFloat("sfxVol", Mathf.Log10(1f) * 20f));
         controller = GetComponent<CharacterController>();
     }
 
@@ -67,6 +71,11 @@ public class PlayerController : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
             isWalking = true;
+
+            // if (isGrounded && !footsteps.isPlaying)
+            // {
+            //     footsteps.Play();
+            // }
         }
         // if (Input.GetKeyDown(KeyCode.W && isGrounded))
         // {
@@ -92,7 +101,8 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -2f * gravity);
-            animator.SetBool("isJumping", true);
+            // animator.SetBool("isJumping", true);
+            animator.SetTrigger("jump");
         }
         playerVelocity.y += gravity * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);

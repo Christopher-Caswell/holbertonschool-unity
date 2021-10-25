@@ -848,6 +848,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8980634757770497844, guid: 5d49218ecba21bd46b68486dd120b279, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3928698816648970203, guid: bea09abc4e99945479b4ea13fc6bd17c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d49218ecba21bd46b68486dd120b279, type: 3}
 --- !u!1001 &8495304120752488646
@@ -893,6 +897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuBG
       objectReference: {fileID: 0}
+    - target: {fileID: 8495304120037859469, guid: 3e998dbead7cb6349b5beece3d4bc572, type: 3}
+      propertyPath: masterMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: bea09abc4e99945479b4ea13fc6bd17c, type: 2}
     - target: {fileID: 8495304120037859470, guid: 3e998dbead7cb6349b5beece3d4bc572, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

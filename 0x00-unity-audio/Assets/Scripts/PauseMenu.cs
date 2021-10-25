@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class PauseMenu : MonoBehaviour
     public Button quitButton;
     public Button menuButton;
     public Button optionsButton;
+
+    public AudioMixerSnapshot paused;
+    public AudioMixerSnapshot unpaused;
 
     void Start()
     {
@@ -51,9 +55,11 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0f;
         GameIsPaused = true;
         pauseMenuUI.SetActive(true);
+        paused.TransitionTo(.01f);
     }
 
     void Resume()
@@ -62,6 +68,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
+        unpaused.TransitionTo(.01f);
     }
 
     void Restart()
@@ -70,6 +77,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        unpaused.TransitionTo(.01f);
     }
 
     public void MainMenu()
@@ -78,6 +86,8 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Who lives in a pineapple under the sea");
         SceneManager.LoadScene("MainMenu");
         Debug.Log("Esponja Bob Pantalones Quadrados");
+        unpaused.TransitionTo(.01f);
+
     }
 
     void Options()
@@ -86,6 +96,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         PlayerPrefs.SetInt("LastScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Options");
+        unpaused.TransitionTo(.01f);
     }
 
     void Quit()

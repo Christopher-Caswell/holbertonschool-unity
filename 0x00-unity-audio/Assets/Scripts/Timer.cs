@@ -16,7 +16,9 @@ public class Timer : MonoBehaviour
         timerStarted = false;        
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
     void Update()
     {
         if (timerStarted)
@@ -26,6 +28,9 @@ public class Timer : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Win replaces the timer text with a win message.
+    /// </summary>
     public void Win()
     {
         winText.text = timerText.text;
