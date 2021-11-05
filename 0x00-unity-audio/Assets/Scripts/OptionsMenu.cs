@@ -47,7 +47,7 @@ public class OptionsMenu : MonoBehaviour
     public void Back()
     {
         SetBGMVol(PlayerPrefs.GetFloat("BGMVolume"));
-        SetSFXVol(PlayerPrefs.GetFloat("BGMVolume"));
+        SetSFXVol(PlayerPrefs.GetFloat("SFXVolume"));
         SceneManager.LoadScene(PlayerPrefs.GetInt("lastScene"));
     }
 

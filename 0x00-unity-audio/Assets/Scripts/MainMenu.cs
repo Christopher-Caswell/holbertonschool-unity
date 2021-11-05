@@ -14,6 +14,7 @@ public AudioMixer masterMixer;
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
+    /// <return> returns returns </return>
     public void Start()
     {
         Cursor.visible = true;
@@ -45,6 +46,7 @@ public AudioMixer masterMixer;
     /// </summary>
     public void Exit() {
         Debug.Log("Exited");
+        PlayerPrefs.Save();
         Application.Quit();
     }
 

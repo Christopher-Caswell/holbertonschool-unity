@@ -281,8 +281,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 5
+  MaxDistance: 300
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2138,7 +2138,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6503437574759888101, guid: bea09abc4e99945479b4ea13fc6bd17c, type: 2}
   m_audioClip: {fileID: 8300000, guid: b411d3773981cf24580add8be12b247d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5575,6 +5575,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734043526648472329, guid: 66f06ed9af3226b4fa9a315739fb40fa, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943196540702933139, guid: 66f06ed9af3226b4fa9a315739fb40fa, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
