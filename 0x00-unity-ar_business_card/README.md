@@ -1,1 +1,1 @@
-# The first foray  into an AR business card
+# The first foray into an AR business card
